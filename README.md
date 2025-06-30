@@ -7,10 +7,10 @@ This repository contains the code and resources for a machine learning project f
 ## Medium Article
 
 A detailed explanation and walkthrough of this project will be available in my Medium article
-[From Data to Insights: A KNN Regression Study on a Classic Diabetes Dataset](https://medium.com/@williamtenhunen/].
+[From Data to Insights: A KNN Regression Study on a Classic Diabetes Dataset].
 
 ## Repository Structure
-
+```
 diabetes-progression-knn-regression/
 ├── README.md
 ├── src/
@@ -23,22 +23,22 @@ diabetes-progression-knn-regression/
 ├── .gitignore
 ├── requirements.txt
 └── LICENSE
-
+```
 ## How to Run This Project
 
 This project's analysis is designed to be executed in a **Google Colab** environment, leveraging its computational resources. The core logic resides in the Python files within the `src/` directory.
 
 1.  **Clone the repository locally:**
     ```bash
-    git clone [https://github.com/YourUsername/diabetes-progression-knn-regression.git](https://github.com/YourUsername/diabetes-progression-knn-regression.git)
+    git clone https://github.com/williamtenhunen/diabetes-progression-knn-regression.git
     cd diabetes-progression-knn-regression
     ```
 2.  **Open in VS Code:** Manage all your Python files (`.py`) in the `src/` directory using VS Code. Write and edit your code here.
 3.  **Transfer `src/` files to Google Colab:**
-        * Go to [colab.research.google.com](https://colab.research.google.com/).
-        * Create a new blank notebook.
-        * In the Colab environment, use the file browser (folder icon on the left sidebar) to upload individual `.py` files from your local `src/` directory directly to Colab's session storage. You'll need to re-upload if you make changes in VS Code.
-        * Alternatively, you can open each `.py` file in VS Code, copy its content, and paste it into separate code cells within your Colab notebook (prefixing with `%%writefile filename.py` if you want to create the file in Colab's session).
+       * Go to [colab.research.google.com](https://colab.research.google.com/).
+       * Create a new blank notebook.
+       * In the Colab environment, use the file browser (folder icon on the left sidebar) to upload individual `.py` files from your local `src/` directory directly to Colab's session storage. You'll need to re-upload if you make changes in VS Code.
+       * Alternatively, you can open each `.py` file in VS Code, copy its content, and paste it into separate code cells within your Colab notebook (prefixing with `%%writefile filename.py` if you want to create the file in Colab's session).
 4.  **Execute the Analysis in Colab:**
     * In your Colab notebook, you will have cells that import functions from your `src` files and then call `main.py` (or individual functions in sequence).
     * A typical Colab cell to run the analysis after setting up paths/uploading:
