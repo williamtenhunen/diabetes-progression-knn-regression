@@ -7,7 +7,7 @@ This repository contains the code and resources for a machine learning project f
 ## Medium Article
 
 A detailed explanation and walkthrough of this project will be available in my Medium article
-[From Data to Insights: A KNN Regression Study on a Classic Diabetes Dataset].
+[From Data to Insights: A KNN Regression Study on a Classic Diabetes Dataset](https://medium.com/@williamtenhunen/from-data-to-insights-a-knn-regression-study-on-a-classic-diabetes-dataset-d37aaf853314).
 
 ## Repository Structure
 ```
