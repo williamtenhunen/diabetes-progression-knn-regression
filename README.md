@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository hosts the code and resources for a machine learning project focused on predicting diabetes disease progression. Leveraging the well-established load_diabetes dataset from scikit-learn, this study explores the application of the K-Nearest Neighbors (KNN) regression algorithm. The project emphasizes a comprehensive data analysis pipeline, from in-depth Exploratory Data Analysis (EDA) and meticulous data preprocessing to hyperparameter tuning and robust model evaluation.
+This repository hosts the code and resources for a machine learning project focused on predicting diabetes disease progression. Leveraging the well-established load_diabetes dataset from scikit-learn, this study explores the application of the K-Nearest Neighbors (KNN) regression algorithm. The project emphasizes a comprehensive data analysis pipeline, from in-depth Exploratory Data Analysis (EDA) and data preprocessing to hyperparameter tuning and model evaluation.
 
 Key Highlights:
 * Exploratory Data Analysis (EDA): Deep dive into dataset characteristics, feature distributions, pairwise relationships, and dimensionality reduction using PCA.
@@ -30,6 +30,7 @@ For a comprehensive walkthrough, detailed explanations, and the full narrative o
 │   └── knn_regression_model.py       # Script for KNN model training, tuning, and evaluation
 ├── images/                           # Directory for saving generated plots and visualizations
 ├── README.md                         # Project README file
+├── LICENSE                           # Project LICENSE file
 ├── requirements.txt                  # List of Python dependencies
 └── .gitignore                        # Specifies intentionally untracked files to ignore
 
