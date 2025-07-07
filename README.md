@@ -2,47 +2,39 @@
 
 ## Project Overview
 
-This repository contains the code and resources for a machine learning project focused on predicting the progression of diabetes. I utilize the classic `load_diabetes` dataset from scikit-learn and implement a K-Nearest Neighbors (KNN) regression model. The study emphasizes data exploration, preprocessing, and detailed model evaluation.
+This repository hosts the code and resources for a machine learning project focused on predicting diabetes disease progression. Leveraging the well-established load_diabetes dataset from scikit-learn, this study explores the application of the K-Nearest Neighbors (KNN) regression algorithm. The project emphasizes a comprehensive data analysis pipeline, from in-depth Exploratory Data Analysis (EDA) and data preprocessing to hyperparameter tuning and model evaluation.
+
+Key Highlights:
+* Exploratory Data Analysis (EDA): Deep dive into dataset characteristics, feature distributions, pairwise relationships, and dimensionality reduction using PCA.
+* Feature Importance Analysis: Quantitative assessment of feature influence on diabetes progression using Linear Regression.
+* Data Preprocessing: Implementation of essential steps including feature scaling and dataset splitting for robust model training and evaluation.
+* KNN Regression Model: Construction, hyperparameter tuning (optimal k selection via Grid Search with Cross-Validation), and performance evaluation of the KNN model.
+* Detailed Evaluation: Assessment of model accuracy and generalization using metrics like MSE, RMSE, MAE, and R-squared, with visual analysis of predictions.
 
 ## Medium Article
 
-A detailed explanation and walkthrough of this project will be available in my Medium article
-[From Data to Insights: A KNN Regression Study on a Classic Diabetes Dataset].
+For a comprehensive walkthrough, detailed explanations, and the full narrative of this project, please refer to the accompanying Medium article:
+[From Data to Insights: A KNN Regression Study on a Classic Diabetes Dataset](https://medium.com/@williamtenhunen/from-data-to-insights-a-knn-regression-study-on-a-classic-diabetes-dataset-d37aaf853314).
 
 ## Repository Structure
 ```
-TBD
+.
+├── data/
+│   └── diabetes-data.txt             # Original diabetes dataset (tab-separated)
+├── src/
+│   ├── eda_histograms.py             # Script for generating feature histograms
+│   ├── eda_linear_regression.py      # Script for linear regression and feature importance
+│   ├── eda_pca.py                    # Script for Principal Component Analysis (PCA)
+│   ├── eda_scatter_plots.py          # Script for generating scatter plots
+│   ├── eda_summary_statistics.py     # Script for generating summary statistics
+│   └── knn_regression_model.py       # Script for KNN model training, tuning, and evaluation
+├── images/                           # Directory for saving generated plots and visualizations
+├── README.md                         # Project README file
+├── LICENSE                           # Project LICENSE file
+├── requirements.txt                  # List of Python dependencies
+└── .gitignore                        # Specifies intentionally untracked files to ignore
+
 ```
-## How to Run This Project
-
-This project's analysis is designed to be executed in a **Google Colab** environment, leveraging its computational resources. The core logic resides in the Python files within the `src/` directory.
-
-1.  **Clone the repository locally:**
-    ```bash
-    git clone https://github.com/williamtenhunen/diabetes-progression-knn-regression.git
-    cd diabetes-progression-knn-regression
-    ```
-2.  **Open in VS Code:** Manage all your Python files (`.py`) in the `src/` directory using VS Code. Write and edit your code here.
-3.  **Transfer `src/` files to Google Colab:**
-       * Go to [colab.research.google.com](https://colab.research.google.com/).
-       * Create a new blank notebook.
-       * In the Colab environment, use the file browser (folder icon on the left sidebar) to upload individual `.py` files from your local `src/` directory directly to Colab's session storage. You'll need to re-upload if you make changes in VS Code.
-       * Alternatively, you can open each `.py` file in VS Code, copy its content, and paste it into separate code cells within your Colab notebook (prefixing with `%%writefile filename.py` if you want to create the file in Colab's session).
-4.  **Execute the Analysis in Colab:**
-    * In your Colab notebook, you will have cells that import functions from your `src` files and then call `main.py` (or individual functions in sequence).
-    * A typical Colab cell to run the analysis after setting up paths/uploading:
-        ```python
-        # from data_loader import load_diabetes_data
-        # from preprocessor import preprocess_data
-        # from model_trainer import train_and_evaluate_knn
-
-        # # Example of calling functions:
-        # X, y = load_diabetes_data()
-        # X_train_scaled, X_test_scaled, y_train, y_test = preprocess_data(X, y)
-        # best_model, metrics = train_and_evaluate_knn(X_train_scaled, X_test_scaled, y_train, y_test)
-        # print(metrics)
-        ```
-    * The `main.py` script (or your Colab cells) should be configured to save any necessary plots to the `images/` folder (which will then be synced to your local repo for Git commits).
 
 ## Technologies Used
 
@@ -51,9 +43,10 @@ This project's analysis is designed to be executed in a **Google Colab** environ
 * `pandas`
 * `numpy`
 * `matplotlib`
+* `statsmodels`
 * `seaborn`
-* `Google Colab`
-* `VS Code`
+* Google Colab
+* VS Code
 
 ## Author
 
@@ -61,4 +54,4 @@ William Tenhunen
 
 ## License
 
-MIT License
+This project is licensed under the MIT License.
