@@ -36,6 +36,14 @@ For a comprehensive walkthrough, detailed explanations, and the full narrative o
 
 ```
 
+## Installation
+
+Clone the repository and install dependencies:
+```bash
+git clone https://github.com/williamtenhunen/diabetes-progression-knn-regression.git
+pip install -r requirements.txt
+```
+
 ## Technologies Used
 
 * Python
